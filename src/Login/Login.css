@@ -1,0 +1,140 @@
+#head h1{
+    display: inline;
+    font-size: 72px;
+    text-shadow: 2px 2px 5px  lime;
+    color:rgb(252, 255, 55);
+    border-style: solid;
+    border-width: 10px;
+    padding-bottom: 2vh;
+    box-shadow: 0 0 30px 1px rgba(0, 255, 0, 0.486);
+    border-color: rgb(252, 255, 55);
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+#head{
+    margin-top:20vh;
+    padding-bottom: 10vh;
+}
+
+.username{
+    transform: translateX(25%);
+}
+
+.password{
+    padding-top: 5vh;
+    transform: translateX(25%);
+}
+
+.form{
+    width: 50%;
+    position: relative;
+    height:50px;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.form input{
+    font-size: 20px;
+    width:100%;
+    height:100%;
+    background-color: #baeeff;
+    color:lime;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+
+.form label{
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(252, 255, 55);
+    text-shadow: 0 0 4px  lime;
+    position: absolute;
+    bottom: -5px;
+    left:0%;
+    width:100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid blue;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+    /* color: #efa1e9;
+    text-shadow:0 0 2px #58a7ea; */
+}
+
+.form input:focus + .label-name::after, .form input:valid + .label-name::after{
+    transform:  translateX(0%);
+}
+
+.content-password{
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .label-password .content-password, .form input:valid + .label-password .content-password{
+    transform: translateY(-150%);
+    font-size: 14px;
+    /* color: #efa1e9;
+    text-shadow:0 0 2px #58a7ea; */
+}
+
+.form input:focus + .label-password::after, .form input:valid + .label-password::after{
+    transform:  translateX(0%);
+}
+
+.login{
+    color: lime;
+    background-color: rgb(252, 255, 55);
+    font-size: 20px;
+    padding: 8px;
+    vertical-align: text-top;
+    margin:10px 50px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px lime;
+    outline:none;
+}
+.button_text{
+    font-weight: bold;
+    text-align: center;
+    /* text-shadow: 0 0 3px skyblue; */
+}
+
+.buttons{
+    margin-top:20px;
+    /* background-color: green; */
+}
+
+.login:hover{
+    color: pink;
+    box-shadow: 0 0 5px 1px pink;
+}
+
+h1{ 
+    color: blanchedalmond;
+}
